@@ -3,8 +3,19 @@
 <head>
 <meta charset="utf-8"/>
 <title>Plant-Based LLMs</title>
+<style type="text/css">
+
+html { font-family: sans-serif; }
+table { border: 1px solid #444; }
+tr:nth-child(odd) { background-color: #f0f0f0; }
+tr:nth-child(odd) td { border-bottom: 1px solid #444; }
+th, td { padding: 4px; }
+
+</style>
 </head>
 <body>
+
+For context or questions, see <a href="https://github.com/mapmeld/plant-based-llms">the GitHub repo</a>.
 
 <h3>Plant-Based LLMs</h3>
 
@@ -12,7 +23,7 @@
 <tr><th>Name</th><th>Tokenization</th><th>HF Link</th><th>GH Link</th></tr>
 <tr><td>AgroNT</td><td>6bp/token, 1000x window<td>https://huggingface.co/InstaDeepAI/agro-nucleotide-transformer-1b</td>
 <td>https://github.com/instadeepai/nucleotide-transformer</td>
-<tr><td span="3">
+<tr><td colspan="4">
 Inference: https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference.ipynb
 Inference on segment: https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference_segment_nt.ipynb
 </td></tr>
@@ -23,7 +34,7 @@ Inference on segment: https://github.com/instadeepai/nucleotide-transformer/blob
 <td>https://huggingface.co/kuleshov-group/PlantCaduceus_l32
 </td>
 <td>https://github.com/kuleshov-group/PlantCaduceus</td>
-<tr><td span="3">
+<tr><td colspan="4">
 Basics: https://github.com/kuleshov-group/PlantCaduceus/blob/main/notebooks/examples.ipynb
 </td></tr>
 
@@ -31,7 +42,7 @@ Basics: https://github.com/kuleshov-group/PlantCaduceus/blob/main/notebooks/exam
 <td>hybrid 1bp or 1 amino acid/token, 4096x window</td>
 <td>https://huggingface.co/tattabio/gLM2_650M</td>
 <td>https://github.com/TattaBio/gLM2</td>
-<tr><td span="3">
+<tr><td colspan="4">
 Example: https://github.com/TattaBio/gLM2/blob/main/categorical_jacobian_gLM2.ipynb
 </td></tr>
 
@@ -44,7 +55,7 @@ Example: https://github.com/TattaBio/gLM2/blob/main/categorical_jacobian_gLM2.ip
 
 <tr><td>Evo</td><td>https://huggingface.co/togethercomputer/evo-1-131k-base</td>
 <td>https://github.com/evo-design/evo</td></tr>
-<tr><td span="3">
+<tr><td colspan="3">
 Inference example: https://github.com/evo-design/evo/blob/main/scripts/example_inference.py
 </td>
 </tr>
