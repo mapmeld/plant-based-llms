@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Plant-Based LLMs</title>
+</head>
+<body>
+
+<h3>Plant-Based LLMs</h3>
+
+<table>
+<tr><th>Name</th><th>Tokenization</th><th>HF Link</th><th>GH Link</th></tr>
+<tr><td>AgroNT</td><td>6bp/token, 1000x window<td>https://huggingface.co/InstaDeepAI/agro-nucleotide-transformer-1b</td>
+<td>https://github.com/instadeepai/nucleotide-transformer</td>
+<tr><td span="3">
+Inference: https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference.ipynb
+Inference on segment: https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference_segment_nt.ipynb
+</td></tr>
+
+
+<tr><td>PlantCaduceus</td>
+<td>1bp/token, 512 tokens x bidirectional</td>
+<td>https://huggingface.co/kuleshov-group/PlantCaduceus_l32
+</td>
+<td>https://github.com/kuleshov-group/PlantCaduceus</td>
+<tr><td span="3">
+Basics: https://github.com/kuleshov-group/PlantCaduceus/blob/main/notebooks/examples.ipynb
+</td></tr>
+
+<tr><td>gLM2</td>
+<td>hybrid 1bp or 1 amino acid/token, 4096x window</td>
+<td>https://huggingface.co/tattabio/gLM2_650M</td>
+<td>https://github.com/TattaBio/gLM2</td>
+<tr><td span="3">
+Example: https://github.com/TattaBio/gLM2/blob/main/categorical_jacobian_gLM2.ipynb
+</td></tr>
+
+
+</table>
+
+<h4>Other notable biology LLMs</h4>
+<table>
+<tr><th>Name</th><th>HF Link</th><th>GH Link</th></tr>
+
+<tr><td>Evo</td><td>https://huggingface.co/togethercomputer/evo-1-131k-base</td>
+<td>https://github.com/evo-design/evo</td></tr>
+<tr><td span="3">
+Inference example: https://github.com/evo-design/evo/blob/main/scripts/example_inference.py
+</td>
+</tr>
+</table>
+
+</body>
+</html>
