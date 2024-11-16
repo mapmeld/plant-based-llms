@@ -1,65 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<meta charset="utf-8"/>
-<title>Plant-Based LLMs</title>
-<style type="text/css">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Plant-Based LLMs</title>
+        <style type="text/css">
+            html {
+                font-family: sans-serif;
+            }
+            table {
+                border: 1px solid #444;
+            }
+            tr:nth-child(odd) {
+                background-color: #f0f0f0;
+            }
+            tr:nth-child(odd) td {
+                border-bottom: 1px solid #444;
+            }
+            th,
+            td {
+                padding: 4px;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        For context or questions, see
+        <a href="https://github.com/mapmeld/plant-based-llms">the GitHub repo</a
+        >.
 
-html { font-family: sans-serif; }
-table { border: 1px solid #444; }
-tr:nth-child(odd) { background-color: #f0f0f0; }
-tr:nth-child(odd) td { border-bottom: 1px solid #444; }
-th, td { padding: 4px; }
+        <h3>Plant-Based LLMs</h3>
 
-</style>
-</head>
-<body>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Tokenization</th>
+                <th>HF Link</th>
+                <th>GH Link</th>
+            </tr>
+            <tr>
+                <td>AgroNT</td>
+                <td>6bp/token, 1000x window</td>
+                <td>
+                    <a
+                        href="https://huggingface.co/InstaDeepAI/agro-nucleotide-transformer-1b"
+                    >
+                        InstaDeepAI/agro-nucleotide-transformer-1b
+                    </a>
+                </td>
+                <td>
+                    <a
+                        href="https://github.com/instadeepai/nucleotide-transformer"
+                    >
+                        instadeepai/nucleotide-transformer
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    Inference:
+                    https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference.ipynb
+                    Inference on segment:
+                    https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference_segment_nt.ipynb
+                </td>
+            </tr>
 
-For context or questions, see <a href="https://github.com/mapmeld/plant-based-llms">the GitHub repo</a>.
+            <tr>
+                <td>PlantCaduceus</td>
+                <td>1bp/token, 512 tokens x bidirectional</td>
+                <td>
+                    <a
+                        href="https://huggingface.co/kuleshov-group/PlantCaduceus_l32"
+                    >
+                        kuleshov-group/PlantCaduceus_l32
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/kuleshov-group/PlantCaduceus">
+                        kuleshov-group/PlantCaduceus
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    Basics:
+                    https://github.com/kuleshov-group/PlantCaduceus/blob/main/notebooks/examples.ipynb
+                </td>
+            </tr>
 
-<h3>Plant-Based LLMs</h3>
+            <tr>
+                <td>gLM2</td>
+                <td>hybrid 1bp or 1 amino acid/token, 4096x window</td>
+                <td>
+                    <a href="https://huggingface.co/tattabio/gLM2_650M">
+                        tattabio/gLM2_650M
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/TattaBio/gLM2">
+                        TattaBio/gLM2
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    Example:
+                    https://github.com/TattaBio/gLM2/blob/main/categorical_jacobian_gLM2.ipynb
+                </td>
+            </tr>
 
-<table>
-<tr><th>Name</th><th>Tokenization</th><th>HF Link</th><th>GH Link</th></tr>
-<tr><td>AgroNT</td><td>6bp/token, 1000x window<td>https://huggingface.co/InstaDeepAI/agro-nucleotide-transformer-1b</td>
-<td>https://github.com/instadeepai/nucleotide-transformer</td>
-<tr><td colspan="4">
-Inference: https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference.ipynb
-Inference on segment: https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference_segment_nt.ipynb
-</td></tr>
+            <tr>
+                <td>ProtNote</td>
+                <td>amino acids + annotation codes</td>
+                <td>--</td>
+                <td>
+                    <a href="https://github.com/microsoft/protnote">
+                        microsoft/protnote
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    Notebooks:
+                    https://github.com/microsoft/protnote/tree/main/notebooks
+                </td>
+            </tr>
 
+            <tr>
+                <td>Plant-*-BPE</td>
+                <td>nucleotide / BPE</td>
+                <td>
+                    <a
+                        href="https://huggingface.co/collections/zhangtaolab/plant-foundation-models-668514bd5c384b679f9bdf17"
+                    >
+                        collections/zhangtaolab/plant-foundation-models
+                    </a>
+                    (multiple architectures: Mamba, BERT, GPT)
+                </td>
+                <td>
+                    <a href="https://github.com/zhangtaolab/plant_DNA_LLMs">
+                        zhangtaolab/plant_DNA_LLMs
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    finetune:
+                    https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/scripts/run_finetune_test.sh
+                    inference:
+                    https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/scripts/run_inference_test.sh
+                </td>
+            </tr>
 
-<tr><td>PlantCaduceus</td>
-<td>1bp/token, 512 tokens x bidirectional</td>
-<td>https://huggingface.co/kuleshov-group/PlantCaduceus_l32
-</td>
-<td>https://github.com/kuleshov-group/PlantCaduceus</td>
-<tr><td colspan="4">
-Basics: https://github.com/kuleshov-group/PlantCaduceus/blob/main/notebooks/examples.ipynb
-</td></tr>
+            <tr>
+                <td>GPN</td>
+                <td>nucleotide</td>
+                <td>
+                    <a
+                        href="https://huggingface.co/collections/songlab/gpn-653191edcb0270ed05ad2c3e"
+                    >
+                        collections/songlab/gpn
+                    </a>
+                    (model, tokenizer, dataset)
+                </td>
+                <td>
+                    <a href="https://github.com/songlab-cal/gpn">
+                        songlab-cal/gpn
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    Embedding:
+                    https://github.com/songlab-cal/gpn/blob/main/examples/ss/basic_example.ipynb
+                    Multiple Sequence Alignment (MSA):
+                    https://github.com/songlab-cal/gpn/blob/main/examples/msa/basic_example.ipynb
+                </td>
+            </tr>
 
-<tr><td>gLM2</td>
-<td>hybrid 1bp or 1 amino acid/token, 4096x window</td>
-<td>https://huggingface.co/tattabio/gLM2_650M</td>
-<td>https://github.com/TattaBio/gLM2</td>
-<tr><td colspan="4">
-Example: https://github.com/TattaBio/gLM2/blob/main/categorical_jacobian_gLM2.ipynb
-</td></tr>
+            <tr>
+                <td>PAIR</td>
+                <td>amino acid</td>
+                <td>
+                    <a href="https://huggingface.co/h4duan"> h4duan </a>
+                    (finetunes of ESM, ProtT5)
+                </td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    Sample use: https://huggingface.co/h4duan/PAIR-prott5
+                </td>
+            </tr>
+        </table>
 
+        <h4>Other notable biology LLMs</h4>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>HF Link</th>
+                <th>GH Link</th>
+            </tr>
+            <tr>
+                <td>Evo</td>
+                <td>
+                    <a
+                        href="https://huggingface.co/togethercomputer/evo-1-131k-base"
+                    >
+                        togethercomputer/evo-1-131k-base
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/evo-design/evo">
+                        evo-design/evo
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Inference example:
+                    https://github.com/evo-design/evo/blob/main/scripts/example_inference.py
+                </td>
+            </tr>
 
-</table>
+            <tr>
+                <td>HyenaDNA</td>
+                <td>
+                    <a
+                        href="https://huggingface.co/LongSafari/hyenadna-large-1m-seqlen"
+                    >
+                        LongSafari/hyenadna-large-1m-seqlen
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/HazyResearch/hyena-dna">
+                        HazyResearch/hyena-dna
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Evaluation scripts:
+                    https://github.com/HazyResearch/hyena-dna/tree/main/evals
+                </td>
+            </tr>
 
-<h4>Other notable biology LLMs</h4>
-<table>
-<tr><th>Name</th><th>HF Link</th><th>GH Link</th></tr>
+            <tr>
+                <td>scGPT</td>
+                <td>--</td>
+                <td>
+                    <a href="https://github.com/bowang-lab/scGPT">
+                        bowang-lab/scGPT
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Finetune:
+                    https://github.com/bowang-lab/scGPT/blob/main/examples/finetune_integration.py
+                </td>
+            </tr>
 
-<tr><td>Evo</td><td>https://huggingface.co/togethercomputer/evo-1-131k-base</td>
-<td>https://github.com/evo-design/evo</td></tr>
-<tr><td colspan="3">
-Inference example: https://github.com/evo-design/evo/blob/main/scripts/example_inference.py
-</td>
-</tr>
-</table>
+            <tr>
+                <td>ChatCell</td>
+                <td>
+                    <a href="https://huggingface.co/zjunlp/chatcell-large">
+                        zjunlp/chatcell-large
+                    </a>
+                </td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    ChatCell instruction dataset:
+                    https://huggingface.co/datasets/zjunlp/ChatCell-Instructions
+                </td>
+            </tr>
 
-</body>
+            <tr>
+                <td>ceLLama</td>
+                <td>-- (standard LLM with R packages)</td>
+                <td>
+                    <a href="https://github.com/CelVoxes/ceLLama">
+                        CelVoxes/ceLLama
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Tutorial:
+                    https://github.com/CelVoxes/ceLLama/blob/main/ceLLama/pbmc2700.ipynb
+                </td>
+            </tr>
+        </table>
+
+        <h4>TBD</h4>
+
+        <ul>
+            <li>https://github.com/sacdallago/bio_embeddings</li>
+            <li>https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks</li>
+            <li>
+                https://huggingface.co/datasets/monsoon-nlp/protein-pairs-uniprot-swissprot
+                and
+                https://huggingface.co/monsoon-nlp/protein-matryoshka-embeddings
+            </li>
+            <li>
+                https://huggingface.co/monsoon-nlp/tinyllama-mixpretrain-quinoa-sciphi
+            </li>
+            <li>
+                https://huggingface.co/datasets/monsoon-nlp/greenbeing-proteins
+                and
+                https://huggingface.co/datasets/monsoon-nlp/greenbeing-binary
+            </li>
+        </ul>
+
+        <!--
+ideas: OMG dataset, my own greenbeing and binary datasets,
+-->
+    </body>
 </html>
