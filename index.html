@@ -39,12 +39,14 @@
         <table>
             <tr>
                 <th>Name</th>
+                <th>Source</th>
                 <th>Tokenization</th>
                 <th>HF Link</th>
                 <th>GH Link</th>
             </tr>
             <tr>
                 <td>AgroNT</td>
+                <td>InstaDeep</td>
                 <td>6bp/token, 1000x window</td>
                 <td>
                     <a
@@ -62,7 +64,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="4">
+                <td colspan="5">
                     Inference:
                     https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference.ipynb
                     Inference on segment:
@@ -72,6 +74,11 @@
 
             <tr>
                 <td>PlantCaduceus</td>
+                <td>
+                    <a href="https://kuleshov-group.github.io/"
+                        >Kuleshov Group</a
+                    >, Cornell University, USA
+                </td>
                 <td>1bp/token, 512 tokens x bidirectional</td>
                 <td>
                     <a
@@ -87,7 +94,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="4">
+                <td colspan="5">
                     Basics:
                     https://github.com/kuleshov-group/PlantCaduceus/blob/main/notebooks/examples.ipynb
                 </td>
@@ -95,6 +102,9 @@
 
             <tr>
                 <td>gLM2</td>
+                <td>
+                    <a href="https://www.tatta.bio/">Tatta Bio</a>
+                </td>
                 <td>hybrid 1bp or 1 amino acid/token, 4096x window</td>
                 <td>
                     <a href="https://huggingface.co/tattabio/gLM2_650M">
@@ -108,7 +118,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="4">
+                <td colspan="5">
                     Example:
                     https://github.com/TattaBio/gLM2/blob/main/categorical_jacobian_gLM2.ipynb
                 </td>
@@ -116,6 +126,7 @@
 
             <tr>
                 <td>ProtNote</td>
+                <td>Microsoft</td>
                 <td>amino acids + annotation codes</td>
                 <td>--</td>
                 <td>
@@ -125,7 +136,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="4">
+                <td colspan="5">
                     Notebooks:
                     https://github.com/microsoft/protnote/tree/main/notebooks
                 </td>
@@ -133,6 +144,10 @@
 
             <tr>
                 <td>Plant-*-BPE</td>
+                <td>
+                    <a href="https://zhangtaolab.org/">Zhang Tao Lab</a>,
+                    Yangzhou University, China
+                </td>
                 <td>nucleotide / BPE</td>
                 <td>
                     <a
@@ -149,7 +164,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="4">
+                <td colspan="5">
                     finetune:
                     https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/scripts/run_finetune_test.sh
                     inference:
@@ -159,6 +174,11 @@
 
             <tr>
                 <td>GPN</td>
+                <td>
+                    <a href="https://people.eecs.berkeley.edu/~yss/group.html"
+                        >Song Lab</a
+                    >, U.C. Berkeley, USA
+                </td>
                 <td>nucleotide</td>
                 <td>
                     <a
@@ -175,7 +195,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="4">
+                <td colspan="5">
                     Embedding:
                     https://github.com/songlab-cal/gpn/blob/main/examples/ss/basic_example.ipynb
                     Multiple Sequence Alignment (MSA):
@@ -185,6 +205,7 @@
 
             <tr>
                 <td>PAIR</td>
+                <td>Vector Institute / U. Toronto, Canada</td>
                 <td>amino acid</td>
                 <td>
                     <a href="https://huggingface.co/h4duan"> h4duan </a>
@@ -193,7 +214,7 @@
                 <td>--</td>
             </tr>
             <tr>
-                <td colspan="4">
+                <td colspan="5">
                     Sample use: https://huggingface.co/h4duan/PAIR-prott5
                 </td>
             </tr>
@@ -203,11 +224,17 @@
         <table>
             <tr>
                 <th>Name</th>
+                <th>Source</th>
                 <th>HF Link</th>
                 <th>GH Link</th>
             </tr>
             <tr>
                 <td>Evo</td>
+                <td>
+                    <a href="https://evodesign.org/"
+                        >Laboratory of Evolutionary Design</a
+                    >, Stanford University, USA
+                </td>
                 <td>
                     <a
                         href="https://huggingface.co/togethercomputer/evo-1-131k-base"
@@ -219,10 +246,14 @@
                     <a href="https://github.com/evo-design/evo">
                         evo-design/evo
                     </a>
+                    and
+                    <a href="https://github.com/togethercomputer/stripedhyena"
+                        >togethercomputer/stripedhyena</a
+                    >
                 </td>
             </tr>
             <tr>
-                <td colspan="3">
+                <td colspan="4">
                     Inference example:
                     https://github.com/evo-design/evo/blob/main/scripts/example_inference.py
                 </td>
@@ -230,6 +261,11 @@
 
             <tr>
                 <td>HyenaDNA</td>
+                <td>
+                    <a href="https://cs.stanford.edu/people/chrismre/"
+                        >Hazy Research</a
+                    >, Stanford University, USA
+                </td>
                 <td>
                     <a
                         href="https://huggingface.co/LongSafari/hyenadna-large-1m-seqlen"
@@ -244,7 +280,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="3">
+                <td colspan="4">
                     Evaluation scripts:
                     https://github.com/HazyResearch/hyena-dna/tree/main/evals
                 </td>
@@ -252,6 +288,10 @@
 
             <tr>
                 <td>scGPT</td>
+                <td>
+                    <a href="https://wanglab.ai/">WangLab</a>, U. Toronto,
+                    Canada
+                </td>
                 <td>--</td>
                 <td>
                     <a href="https://github.com/bowang-lab/scGPT">
@@ -260,7 +300,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="3">
+                <td colspan="4">
                     Finetune:
                     https://github.com/bowang-lab/scGPT/blob/main/examples/finetune_integration.py
                 </td>
@@ -269,6 +309,10 @@
             <tr>
                 <td>ChatCell</td>
                 <td>
+                    <a href="https://www.zjukg.org/">ZJUKG</a>, Zhejiang
+                    University, China
+                </td>
+                <td>
                     <a href="https://huggingface.co/zjunlp/chatcell-large">
                         zjunlp/chatcell-large
                     </a>
@@ -276,7 +320,7 @@
                 <td>--</td>
             </tr>
             <tr>
-                <td colspan="3">
+                <td colspan="4">
                     ChatCell instruction dataset:
                     https://huggingface.co/datasets/zjunlp/ChatCell-Instructions
                 </td>
@@ -284,6 +328,7 @@
 
             <tr>
                 <td>ceLLama</td>
+                <td><a href="https://celvox.co/">CelVox</a>, Netherlands</td>
                 <td>-- (standard LLM with R packages)</td>
                 <td>
                     <a href="https://github.com/CelVoxes/ceLLama">
@@ -292,7 +337,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="3">
+                <td colspan="4">
                     Tutorial:
                     https://github.com/CelVoxes/ceLLama/blob/main/ceLLama/pbmc2700.ipynb
                 </td>
@@ -304,6 +349,7 @@
         <ul>
             <li>https://github.com/sacdallago/bio_embeddings</li>
             <li>https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks</li>
+            <li>https://huggingface.co/datasets/tattabio/OMG</li>
             <li>
                 https://huggingface.co/datasets/monsoon-nlp/protein-pairs-uniprot-swissprot
                 and
@@ -318,9 +364,5 @@
                 https://huggingface.co/datasets/monsoon-nlp/greenbeing-binary
             </li>
         </ul>
-
-        <!--
-ideas: OMG dataset, my own greenbeing and binary datasets,
--->
     </body>
 </html>
