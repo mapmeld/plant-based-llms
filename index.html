@@ -9,32 +9,48 @@
                 font-family: sans-serif;
             }
             table {
-                border: 1px solid #444;
+                border: 1px solid #aaa;
             }
             tr:nth-child(odd) {
                 background-color: #f0f0f0;
             }
             tr:nth-child(odd) td {
-                border-bottom: 1px solid #444;
+                border-bottom: 1px solid #aaa;
             }
             th,
             td {
                 padding: 4px;
             }
             a {
+                cursor: pointer;
                 text-decoration: none;
             }
             a:hover {
                 text-decoration: underline;
             }
+            .bracket {
+              border: 1px solid #000;
+              border-radius: 10px;
+              margin-bottom: 15px;
+              padding: 10px;
+            }
         </style>
     </head>
     <body>
+      <p>
+        LLMs trained on plant genomes and proteomes.
         For context or questions, see
         <a href="https://github.com/mapmeld/plant-based-llms">the GitHub repo</a
         >.
+      </p>
 
-        <h3>Plant-Based LLMs</h3>
+      <p>
+        Skip to: <a href="#plant">Plant-Based</a> | <a href="#inclusive">Plant-Inclusive</a> | <a href="#other">Other Notable</a>
+      </p>
+
+      <a name="plant"></a>
+      <div class="bracket">
+        <h4>Plant-Based LLMs / Research</h4>
 
         <table>
             <tr>
@@ -69,6 +85,8 @@
                     https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference.ipynb
                     Inference on segment:
                     https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference_segment_nt.ipynb
+                    For non-plant DNA, see:
+                    https://huggingface.co/InstaDeepAI/nucleotide-transformer-2.5b-multi-species
                 </td>
             </tr>
 
@@ -100,6 +118,145 @@
                 </td>
             </tr>
 
+            <tr>
+                <td>Plant-*-BPE</td>
+                <td>
+                    <a href="https://zhangtaolab.org/">Zhang Tao Lab</a>,
+                    Yangzhou University, China
+                </td>
+                <td>nucleotide / BPE</td>
+                <td>
+                    <a
+                        href="https://huggingface.co/collections/zhangtaolab/plant-foundation-models-668514bd5c384b679f9bdf17"
+                    >
+                        collections/zhangtaolab/plant-foundation-models
+                    </a>
+                    (multiple architectures: Mamba, BERT, GPT)
+                </td>
+                <td>
+                    <a href="https://github.com/zhangtaolab/plant_DNA_LLMs">
+                        zhangtaolab/plant_DNA_LLMs
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    finetune:
+                    https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/scripts/run_finetune_test.sh
+                    inference:
+                    https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/scripts/run_inference_test.sh
+                </td>
+            </tr>
+
+            <tr>
+                <td>PlantRNA-FM</td>
+                <td>ColaLAB@UniversityofExeter and JIC@NorwichResearchPark</td>
+                <td>EsmTokenizer</td>
+                <td>
+                    <a href="https://huggingface.co/yangheng/PlantRNA-FM">
+                        yangheng/PlantRNA-FM</a
+                    >
+                </td>
+                <td>
+                    <a href="https://github.com/yangheng95/PlantRNA-FM"
+                        >yangheng95/PlantRNA-FM</a
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    region classification
+                    https://github.com/yangheng95/PlantRNA-FM/blob/master/rice_region_classification.py
+                    also see https://huggingface.co/yangheng/OmniGenome-52M and
+                    https://github.com/yangheng95/OmniGenBench
+                </td>
+            </tr>
+
+            <tr>
+                <td>PlantBERT</td>
+                <td>University of Potsdam, Germany</td>
+                <td>multiple nucleotides</td>
+                <td>
+                    <a href="https://huggingface.co/nigelhartm/PlantBERT"
+                        >nigelhartm/PlantBERT</a
+                    >
+                </td>
+                <td>
+                    <a href="https://github.com/nigelhartm/PlantBERT"
+                        >nigelhartm/PlantBERT</a
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    finetune:
+                    https://github.com/nigelhartm/PlantBERT/blob/main/scripts/08_finetune_all_gue.py
+                </td>
+            </tr>
+
+            <tr>
+                <td>FloraBERT</td>
+                <td>
+                    Institute for Applied Computational Sciences, Harvard
+                    University, USA
+                </td>
+                <td>multiple nucleotides</td>
+                <td>
+                    <a href="https://huggingface.co/Gurveer05/FloraBERT">
+                        Gurveer05/FloraBERT
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/gurveervirk/florabert"
+                        >gurveervirk/florabert</a
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    finetune
+                    https://github.com/benlevyx/florabert/blob/main/scripts/1-modeling/finetune.py
+                </td>
+            </tr>
+
+            <tr>
+                <td>protein-matryoshka-embeddings</td>
+                <td>it me, USA</td>
+                <td>amino acids</td>
+                <td>
+                    <a
+                        href="https://huggingface.co/monsoon-nlp/protein-matryoshka-embeddings"
+                        >monsoon-nlp/protein-matryoshka-embeddings</a
+                    >
+                </td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    dataset of pairs
+                    https://huggingface.co/datasets/monsoon-nlp/protein-pairs-uniprot-swissprot <br/>
+                    plant protein and text descriptions: https://huggingface.co/datasets/monsoon-nlp/greenbeing-proteins <br/>
+                    plant protein descriptions converted to binary classification tasks: https://huggingface.co/datasets/monsoon-nlp/greenbeing-binary
+                </td>
+            </tr>
+
+        </table>
+      </div>
+
+        <a name="inclusive"></a>
+        <div class="bracket">
+        <h4>"Plant-Inclusive" LLMs / Research</h4>
+
+        Trained on cells and proteins in general, including plants in training.
+
+        <table>
+            <tr>
+              <th>Name</th>
+              <th>Source</th>
+              <th>Tokenization</th>
+              <th>HF Link</th>
+              <th>GH Link</th>
+            </tr>
             <tr>
                 <td>gLM2</td>
                 <td>
@@ -143,34 +300,51 @@
             </tr>
 
             <tr>
-                <td>Plant-*-BPE</td>
+                <td>ESM-2</td>
+                <td>Facebook / Meta</td>
+                <td>ESMTokenizer / amino acids</td>
                 <td>
-                    <a href="https://zhangtaolab.org/">Zhang Tao Lab</a>,
-                    Yangzhou University, China
-                </td>
-                <td>nucleotide / BPE</td>
-                <td>
-                    <a
-                        href="https://huggingface.co/collections/zhangtaolab/plant-foundation-models-668514bd5c384b679f9bdf17"
-                    >
-                        collections/zhangtaolab/plant-foundation-models
-                    </a>
-                    (multiple architectures: Mamba, BERT, GPT)
+                  <a href="https://huggingface.co/facebook/esm2_t48_15B_UR50D">
+                    facebook/esm2_t48_15B_UR50D
+                  </a>
                 </td>
                 <td>
-                    <a href="https://github.com/zhangtaolab/plant_DNA_LLMs">
-                        zhangtaolab/plant_DNA_LLMs
-                    </a>
+                    <a href="https://github.com/facebookresearch/esm">
+                        facebookresearch/esm
+                    </a> (archived)
                 </td>
             </tr>
             <tr>
                 <td colspan="5">
-                    finetune:
-                    https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/scripts/run_finetune_test.sh
-                    inference:
-                    https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/scripts/run_inference_test.sh
+                    Many finetuned models on HF
                 </td>
             </tr>
+
+            <tr>
+                <td>Bio Embeddings</td>
+                <td>Technical University of Munich, Germany</td>
+                <td>amino acids (?)</td>
+                <td>supports multiple models</td>
+                <td>
+                    <a href="https://github.com/sacdallago/bio_embeddings"
+                        >sacdallago/bio_embeddings</a
+                    >
+                </td>
+            </tr>
+            <tr></tr>
+
+            <tr>
+                <td>ProtTrans</td>
+                <td>multiple</td>
+                <td>amino acids</td>
+                <td><a href="https://huggingface.co/Rostlab">Rostlab</a></td>
+                <td>
+                    <a href="https://github.com/agemagician/ProtTrans"
+                        >agemagician/ProtTrans</a
+                    >
+                </td>
+            </tr>
+            <tr></tr>
 
             <tr>
                 <td>GPN</td>
@@ -201,6 +375,23 @@
                     Multiple Sequence Alignment (MSA):
                     https://github.com/songlab-cal/gpn/blob/main/examples/msa/basic_example.ipynb
                 </td>
+            </tr>
+
+            <tr>
+              <td>BioM3</td>
+              <td>U. Chicago, USA</td>
+              <td>amino acid, protein design from natural text</td>
+              <td>
+                --
+              </td>
+              <td>
+                --
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5">
+                Paper: https://www.biorxiv.org/content/10.1101/2024.11.11.622734
+              </td>
             </tr>
 
             <tr>
@@ -292,28 +483,24 @@
             </tr>
 
             <tr>
-                <td>PlantRNA-FM</td>
-                <td>ColaLAB@UniversityofExeter and JIC@NorwichResearchPark</td>
-                <td>EsmTokenizer</td>
+                <td>CHEAP Embeddings</td>
+                <td>multiple, USA</td>
+                <td>amino acids</td>
                 <td>
-                    <a href="https://huggingface.co/yangheng/PlantRNA-FM">
-                        yangheng/PlantRNA-FM</a
+                    <a href="https://huggingface.co/amyxlu/cheap-proteins"
+                        >amyxlu/cheap-proteins</a
+                    >, based on
+                    <a href="https://huggingface.co/facebook/esmfold_v1"
+                        >ESMFold</a
                     >
                 </td>
                 <td>
-                    <a href="https://github.com/yangheng95/PlantRNA-FM"
-                        >yangheng95/PlantRNA-FM</a
+                    <a href="https://github.com/amyxlu/cheap-proteins">
+                        amyxlu/cheap-proteins</a
                     >
                 </td>
             </tr>
-            <tr>
-                <td colspan="5">
-                    region classification
-                    https://github.com/yangheng95/PlantRNA-FM/blob/master/rice_region_classification.py
-                    also see https://huggingface.co/yangheng/OmniGenome-52M and
-                    https://github.com/yangheng95/OmniGenBench
-                </td>
-            </tr>
+            <tr></tr>
 
             <tr>
                 <td>ProTrek</td>
@@ -346,6 +533,59 @@
                     https://colab.research.google.com/drive/1On2xQU0d7351bIBgZpz2T0VUp2gZium0?usp=sharing
                 </td>
             </tr>
+
+            <tr>
+              <td>Prot-xLSTM</td>
+              <td>JKU Linz, Austria</td>
+              <td>amino acids</td>
+              <td><a href="https://ml.jku.at/research/Bio-xLSTM/downloads/Prot-xLSTM/">ml.jku.at</a></td>
+              <td><a href="https://github.com/ml-jku/Prot-xLSTM">ml-jku/Prot-xLSTM</a></td>
+            </tr>
+            <tr>
+              <td colspan="5">
+                evaluation: https://github.com/ml-jku/Prot-xLSTM/tree/main/evaluation
+                generation: https://github.com/ml-jku/Prot-xLSTM/blob/main/examples/generation.ipynb
+                variant fitness: https://github.com/ml-jku/Prot-xLSTM/blob/main/examples/variant_fitness.ipynb
+              </td>
+            </tr>
+
+            <tr>
+                <td>RNA-FM / RhoFold</td>
+                <td>
+                    multiple
+                </td>
+                <td>nucleotides</td>
+                <td>
+                    (<a href="https://drive.google.com/drive/folders/1VGye74GnNXbUMKx6QYYectZrY7G2pQ_J">official</a> on Google Drive)<br/>
+                    (<a href="https://huggingface.co/multimolecule/rnafm">unofficial</a> on HF/multimolecule)
+                </td>
+                <td>
+                    <a href="https://github.com/ml4bio/RNA-FM"
+                        >ml4bio/RNA-FM</a
+                    >
+                </td>
+            </tr>
+            <tr></tr>
+
+            <tr>
+                <td>Protein-Vec</td>
+                <td>
+                    <a href="https://www.gleghornlab.com/">Gleghorn Lab</a>, U.
+                    Delaware, USA
+                </td>
+                <td></td>
+                <td>
+                    <a href="https://huggingface.co/lhallee/ProteinVec"
+                        >lhallee/ProteinVec</a
+                    >
+                </td>
+                <td>
+                    <a href="https://github.com/lhallee/ProteinVecHuggingface"
+                        >lhallee/ProteinVecHuggingface</a
+                    >
+                </td>
+            </tr>
+            <tr></tr>
 
             <tr>
                 <td>MAMMAL / biomed.omics / biomed-multi-alignment</td>
@@ -410,130 +650,13 @@
             <tr>
                 <td colspan="5">--</td>
             </tr>
-
-            <tr>
-                <td>PlantBERT</td>
-                <td>University of Potsdam, Germany</td>
-                <td>multiple nucleotides</td>
-                <td>
-                    <a href="https://huggingface.co/nigelhartm/PlantBERT"
-                        >nigelhartm/PlantBERT</a
-                    >
-                </td>
-                <td>
-                    <a href="https://github.com/nigelhartm/PlantBERT"
-                        >nigelhartm/PlantBERT</a
-                    >
-                </td>
-            </tr>
-            <tr>
-                <td colspan="5">
-                    finetune:
-                    https://github.com/nigelhartm/PlantBERT/blob/main/scripts/08_finetune_all_gue.py
-                </td>
-            </tr>
-
-            <tr>
-                <td>FloraBERT</td>
-                <td>
-                    Institute for Applied Computational Sciences, Harvard
-                    University, USA
-                </td>
-                <td>multiple nucleotides</td>
-                <td>
-                    <a href="https://huggingface.co/Gurveer05/FloraBERT">
-                        Gurveer05/FloraBERT
-                    </a>
-                </td>
-                <td>
-                    <a href="https://github.com/gurveervirk/florabert"
-                        >gurveervirk/florabert</a
-                    >
-                </td>
-            </tr>
-            <tr>
-                <td colspan="5">
-                    finetune
-                    https://github.com/benlevyx/florabert/blob/main/scripts/1-modeling/finetune.py
-                </td>
-            </tr>
         </table>
+      </div>
 
-        <h4>General bio embeddings</h4>
-        Previous models can be useful for embeddings, but these are designed and
-        tested for the purpose of cell embeddings
-
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Source</th>
-                <th>HF Link</th>
-                <th>GH Link</th>
-            </tr>
-            <tr>
-                <td>Bio Embeddings</td>
-                <td>Technical University of Munich, Germany</td>
-                <td>supports multiple models</td>
-                <td>
-                    <a href="https://github.com/sacdallago/bio_embeddings"
-                        >sacdallago/bio_embeddings</a
-                    >
-                </td>
-            </tr>
-            <tr></tr>
-            <tr>
-                <td>CHEAP Embeddings</td>
-                <td></td>
-                <td>
-                    <a href="https://huggingface.co/amyxlu/cheap-proteins"
-                        >amyxlu/cheap-proteins</a
-                    >, based on
-                    <a href="https://huggingface.co/facebook/esmfold_v1"
-                        >ESMFold</a
-                    >
-                </td>
-                <td>
-                    <a href="https://github.com/amyxlu/cheap-proteins">
-                        amyxlu/cheap-proteins</a
-                    >
-                </td>
-            </tr>
-            <tr></tr>
-            <tr>
-                <td>protein-matryoshka-embeddings</td>
-                <td>me, USA</td>
-                <td>
-                    <a
-                        href="https://huggingface.co/monsoon-nlp/protein-matryoshka-embeddings"
-                        >monsoon-nlp/protein-matryoshka-embeddings</a
-                    >
-                </td>
-                <td>--</td>
-            </tr>
-            <tr>
-                <td colspan="5">
-                    dataset of pairs
-                    https://huggingface.co/datasets/monsoon-nlp/protein-pairs-uniprot-swissprot
-                </td>
-            </tr>
-            <tr>
-                <td>Protein-Vec</td>
-                <td></td>
-                <td>
-                    <a href="https://huggingface.co/lhallee/ProteinVec"
-                        >lhallee/ProteinVec</a
-                    >
-                </td>
-                <td>
-                    <a href="https://github.com/lhallee/ProteinVecHuggingface"
-                        >lhallee/ProteinVecHuggingface</a
-                    >
-                </td>
-            </tr>
-            <tr></tr>
-        </table>
-
+        <a name="other"></a>
+        <div class="bracket">
         <h4>Other notable biology + LLM work</h4>
+        <p>Not trained on any plants, but seems important to the bio research community.</p>
         <table>
             <tr>
                 <th>Name</th>
@@ -729,31 +852,32 @@
                 </td>
             </tr>
         </table>
+      </div>
 
         <h4>To be sorted</h4>
         <ul>
-            <li>
+            <!-- <li>
                 https://huggingface.co/monsoon-nlp/tinyllama-mixpretrain-quinoa-sciphi
+            </li> -->
+            <li>
+              https://huggingface.co/datasets/zwang09/protein_test_Llmma is a dataset of natural language descriptions
+              and amino acids
             </li>
             <li>
-                https://huggingface.co/datasets/monsoon-nlp/greenbeing-proteins
-                and
-                https://huggingface.co/datasets/monsoon-nlp/greenbeing-binary
-            </li>
-            <li>
-                AmelieSchreiber/esm2_t6_8M_finetuned_cafa5,
-                zwang09/protein_test_Llmma, zxcyfr,
+                zxcyfr,
                 lamm-mit/ProteinMechanicsDiffusionDesign, shashwatsaini,
                 lamm-mit/ProteinForceGPT, AI4Protein,
                 https://huggingface.co/datasets/nikolayvV/protein-function-prediction-preprocessed
                 , ProteinSequenceAnnotation , QizhiPei , ProteinDT from
                 https://arxiv.org/abs/2302.04611
                 SaProtHub/Model-Mega-sacle-Protein-Stability-Prediction-35M ,
-                zjunlp/Mol-Instructions , fb esm2,
+                zjunlp/Mol-Instructions
+                https://huggingface.co/blog/AmelieSchreiber/esmbind
                 Timofey/Gemma-2-9b-it-Fused_PPI , ORNL/affinity_pred ,
                 https://huggingface.co/collections/suke-sho/kmer-plant-bert-65e41ff19fb58a5115a291be
                 https://github.com/ShenLab/SeqDance
                 https://github.com/microsoft/evodiff
+                https://github.com/ncbi/GeneGPT http://data.bioembeddings.com/
                 https://github.com/RosettaCommons/RFdiffusion/tree/main/examples
             </li>
         </ul>

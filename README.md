@@ -1,6 +1,6 @@
 ## Background
 
-Plant scientists and geneticists have made progress on understanding the function of several genes and corresponding proteins. This work is facilitated in part by public datasets of genomes and 
+Plant scientists and geneticists have made progress on understanding the function of several genes and corresponding proteins. This work is facilitated in part by public datasets of genomes and
 common / similar genes between plant species. Recent trends in this space include finding useful genes in 'wild relatives' of crops, cross-breeding varieties of plants to collect the best traits,
 and identifying natural defenses against disease, pests, and drought.
 
@@ -22,8 +22,7 @@ are plenty of researchers who are collecting, mapping, and crossing varieties of
 GMO research, but it could also be used to find existing defenses to reduce chemical pesticides/herbicides or stop the spread of fungi which harm crops.
 
 **Where is AlphaFold / protein folding?** If you are a researcher you can ask DeepMind for access to AlphaFold.
-I'm not interested in listing and comparing protein folding models, because you should probably just use AlphaFold.
+Other options include Chai-1 and Boltz-1. This repo is for foundation models, generative models, embeddings, etc
 
 **What about my DNA?** Human testing and identifying human genes has its own challenges around testing / iteration and of course ethics. I don't want an amateur LLM to hallucinate
 a bunch of information about your DNA. Plants and micro-organisms are complex and lively but much safer to study.
-
