@@ -316,7 +316,7 @@
             </tr>
             <tr>
                 <td colspan="5">
-                    Many finetuned models on HF
+                    Many finetuned models on HF, such as https://huggingface.co/blog/AmelieSchreiber/esmbind
                 </td>
             </tr>
 
@@ -331,7 +331,11 @@
                     >
                 </td>
             </tr>
-            <tr></tr>
+            <tr>
+              <td colspan="5">
+                http://data.bioembeddings.com/
+              </td>
+            </tr>
 
             <tr>
                 <td>ProtTrans</td>
@@ -635,6 +639,24 @@
             </tr>
 
             <tr>
+                <td>PSALM</td>
+                <td>Harvard University, USA</td>
+                <td>ESMTokenizer</td>
+                <td>
+                    <a href="https://huggingface.co/ProteinSequenceAnnotation"
+                        >ProteinSequenceAnnotation</a
+                    >
+                </td>
+                <td>
+                    <a href="https://github.com/Protein-Sequence-Annotation/PSALM"
+                        >Protein-Sequence-Annotation/PSALM</a
+                    >
+                </td>
+            </tr>
+            <tr>
+            </tr>
+
+            <tr>
                 <td>Protein-Llama-3-8B and Protein-Phi-3-mini</td>
                 <td>Esperanto Technologies, USA</td>
                 <td></td>
@@ -650,13 +672,51 @@
             <tr>
                 <td colspan="5">--</td>
             </tr>
+
+            <tr>
+                <td>ProteinDT</td>
+                <td>multiple</td>
+                <td>amino acids</td>
+                <td>
+                    <a
+                        href="https://huggingface.co/chao1224/ProteinDT/tree/main/ProteinDT"
+                    >
+                        chao1224/ProteinDT
+                    </a>
+                </td>
+                <td>
+                  <a href="https://github.com/chao1224/ProteinDT">chao1224/ProteinDT</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">--</td>
+            </tr>
+
+            <tr>
+                <td>SeqDance</td>
+                <td><a href="http://www.columbia.edu/~ys2411/">Shen Lab</a>, Columbia University, USA</td>
+                <td>EsmTokenizer</td>
+                <td>
+                    <a
+                        href="https://zenodo.org/records/13909695"
+                    >
+                        on Zenodo
+                    </a>
+                </td>
+                <td>
+                  <a href="https://github.com/ShenLab/SeqDance">ShenLab/SeqDance</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">--</td>
+            </tr>
         </table>
       </div>
 
         <a name="other"></a>
         <div class="bracket">
         <h4>Other notable biology + LLM work</h4>
-        <p>Not trained on any plants, but seems important to the bio research community.</p>
+        <p>Not trained on any plants, but seems important to the bio research community. Includes datasets, tool-use</p>
         <table>
             <tr>
                 <th>Name</th>
@@ -816,7 +876,21 @@
             <tr></tr>
 
             <tr>
-                <td>ChatCell</td>
+              <td>GeneGPT</td>
+              <td>NCBI, USA</td>
+              <td>--</td>
+              <td>
+                <a href="https://github.com/ncbi/GeneGPT">ncbi/GeneGPT</a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                Natural language text / amino acids tool-use dataset
+              </td>
+            </tr>
+
+            <tr>
+                <td>ChatCell / Mol-Instructions</td>
                 <td>
                     <a href="https://www.zjukg.org/">ZJUKG</a>, Zhejiang
                     University, China
@@ -831,8 +905,29 @@
             <tr>
                 <td colspan="4">
                     ChatCell instruction dataset:
-                    https://huggingface.co/datasets/zjunlp/ChatCell-Instructions
+                    https://huggingface.co/datasets/zjunlp/ChatCell-Instructions <br/>
+                    Mol-Instructions dataset:
+                    https://huggingface.co/datasets/zjunlp/Mol-Instructions
                 </td>
+            </tr>
+
+            <tr>
+                <td>affinity_pred</td>
+                <td>
+                    Oak Ridge National Laboratory, USA
+                </td>
+                <td>
+                    <a href="https://huggingface.co/models?search=jglaser%20affinity">
+                        jglaser
+                    </a>
+                </td>
+                <td>
+                  <a href="https://github.com/ORNL/affinity_pred">
+                    ORNL/affinity_pred
+                  </a>
+                </td>
+            </tr>
+            <tr>
             </tr>
 
             <tr>
@@ -864,21 +959,16 @@
               and amino acids
             </li>
             <li>
-                zxcyfr,
-                lamm-mit/ProteinMechanicsDiffusionDesign, shashwatsaini,
-                lamm-mit/ProteinForceGPT, AI4Protein,
-                https://huggingface.co/datasets/nikolayvV/protein-function-prediction-preprocessed
-                , ProteinSequenceAnnotation , QizhiPei , ProteinDT from
-                https://arxiv.org/abs/2302.04611
-                SaProtHub/Model-Mega-sacle-Protein-Stability-Prediction-35M ,
-                zjunlp/Mol-Instructions
-                https://huggingface.co/blog/AmelieSchreiber/esmbind
-                Timofey/Gemma-2-9b-it-Fused_PPI , ORNL/affinity_pred ,
+              https://github.com/RosettaCommons/RFdiffusion/tree/main/examples
+              is open source protein-folding
+            </li>
+            <li>
+              LAMM: MIT Laboratory for Atomistic and Molecular Mechanics<br/>
+              https://github.com/lamm-mit | https://huggingface.co/lamm-mit
+            </li>
+            <li>
+                zxcyfr, shashwatsaini, AI4Protein, QizhiPei ,
                 https://huggingface.co/collections/suke-sho/kmer-plant-bert-65e41ff19fb58a5115a291be
-                https://github.com/ShenLab/SeqDance
-                https://github.com/microsoft/evodiff
-                https://github.com/ncbi/GeneGPT http://data.bioembeddings.com/
-                https://github.com/RosettaCommons/RFdiffusion/tree/main/examples
             </li>
         </ul>
     </body>
