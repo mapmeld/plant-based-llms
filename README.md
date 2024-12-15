@@ -8,6 +8,8 @@ I realized that I believed that climate change threatened the world's food suppl
 and if LLMs could decode DNA. Turns out, the full story is much, much more complicated. But there is interesting research going on into biology + LLMs, and I'd like to highlight
 work in plants, specifically.
 
+<img src="https://mapmeld.com/plant-based-llms/header-image.png"/><br/>
+
 ## Goals
 
 - Catalog major models and tasks related to training language models on plant genomes and proteomes
