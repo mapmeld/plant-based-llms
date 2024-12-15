@@ -22,7 +22,7 @@ are plenty of researchers who are collecting, mapping, and crossing varieties of
 GMO research, but it could also be used to find existing defenses to reduce chemical pesticides/herbicides or stop the spread of fungi which harm crops.
 
 **Where is AlphaFold / protein folding?** If you are a researcher you can ask DeepMind for access to AlphaFold.
-Other options include Chai-1 and Boltz-1. This repo is for foundation models, generative models, embeddings, etc
+Other options include Chai-1, Boltz-1, and Protenix. This repo is for foundation models, generative models, embeddings, etc
 
 **What about my DNA?** Human testing and identifying human genes has its own challenges around testing / iteration and of course ethics. I don't want an amateur LLM to hallucinate
 a bunch of information about your DNA. Plants and micro-organisms are complex and lively but much safer to study.
