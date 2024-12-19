@@ -33,6 +33,10 @@
             a:hover {
                 text-decoration: underline;
             }
+            td[colspan='4'] a, td[colspan='5'] a {
+              color: #0af;
+              font-size: 85%;
+            }
             .bracket {
               border: 1px solid #000;
               border-radius: 10px;
@@ -105,12 +109,12 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        Inference:
-                        https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference.ipynb
-                        Inference on segment:
-                        https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference_segment_nt.ipynb
+                        <a href="https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference.ipynb">Inference notebook</a>
+                        -
+                        <a href="https://github.com/instadeepai/nucleotide-transformer/blob/main/examples/inference_segment_nt.ipynb">Inference on segment</a>
+                        -
                         For non-plant DNA, see:
-                        https://huggingface.co/InstaDeepAI/nucleotide-transformer-2.5b-multi-species
+                        <a href="https://huggingface.co/InstaDeepAI/nucleotide-transformer-2.5b-multi-species">nucleotide-transformer-2.5b-multi-species</a>
                     </td>
                 </tr>
 
@@ -137,8 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        Basics:
-                        https://github.com/kuleshov-group/PlantCaduceus/blob/main/notebooks/examples.ipynb
+                        <a href="https://github.com/kuleshov-group/PlantCaduceus/blob/main/notebooks/examples.ipynb">Examples notebook</a>
                     </td>
                 </tr>
 
@@ -165,10 +168,9 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        finetune:
-                        https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/scripts/run_finetune_test.sh
-                        inference:
-                        https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/scripts/run_inference_test.sh
+                        <a href="https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/scripts/run_finetune_test.sh">finetuning shell script</a>
+                        -
+                        <a href="https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/scripts/run_inference_test.sh">inference shell script</a>
                     </td>
                 </tr>
 
@@ -191,10 +193,11 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        region classification
-                        https://github.com/yangheng95/PlantRNA-FM/blob/master/rice_region_classification.py
-                        also see https://huggingface.co/yangheng/OmniGenome-52M and
-                        https://github.com/yangheng95/OmniGenBench
+                        <a href="https://github.com/yangheng95/PlantRNA-FM/blob/master/rice_region_classification.py">region classification in Python</a>
+                        -
+                        also see <a href="https://huggingface.co/yangheng/OmniGenome-52M">OmniGenome-52M model</a>
+                        and
+                        <a href="https://github.com/yangheng95/OmniGenBench">OmniGenBench benchmark for foundation models</a>
                     </td>
                 </tr>
 
@@ -215,8 +218,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        finetune:
-                        https://github.com/nigelhartm/PlantBERT/blob/main/scripts/08_finetune_all_gue.py
+                        <a href="https://github.com/nigelhartm/PlantBERT/blob/main/scripts/08_finetune_all_gue.py">finetuning Python script</a>
                     </td>
                 </tr>
 
@@ -240,8 +242,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        finetune
-                        https://github.com/benlevyx/florabert/blob/main/scripts/1-modeling/finetune.py
+                        <a href="https://github.com/benlevyx/florabert/blob/main/scripts/1-modeling/finetune.py">finetuning Python script</a>
                     </td>
                 </tr>
 
@@ -275,10 +276,9 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        dataset of pairs
-                        https://huggingface.co/datasets/monsoon-nlp/protein-pairs-uniprot-swissprot <br/>
-                        plant protein and text descriptions: https://huggingface.co/datasets/monsoon-nlp/greenbeing-proteins <br/>
-                        plant protein descriptions converted to binary classification tasks: https://huggingface.co/datasets/monsoon-nlp/greenbeing-binary
+                        <a href="https://huggingface.co/datasets/monsoon-nlp/protein-pairs-uniprot-swissprot">dataset of pairs</a><br/>
+                        <a href="https://huggingface.co/datasets/monsoon-nlp/greenbeing-proteins">plant protein and text descriptions</a><br/>
+                        <a href="https://huggingface.co/datasets/monsoon-nlp/greenbeing-binary">plant protein descriptions converted to binary classification tasks</a>
                     </td>
                 </tr>
             </table>
@@ -319,11 +319,31 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        Example:
-                        https://github.com/TattaBio/gLM2/blob/main/categorical_jacobian_gLM2.ipynb
-                    Embeddings: https://huggingface.co/tattabio/gLM2_650M_embed 
+                        <a href="https://github.com/TattaBio/gLM2/blob/main/categorical_jacobian_gLM2.ipynb">example notebook</a> -
+                        <a href="https://huggingface.co/tattabio/gLM2_650M_embed">gLM2's embeddings model</a>
                     </td>
                 </tr>
+
+                <tr>
+                    <td>ZymCTRL</td>
+                    <td><a href="https://www.aiproteindesign.com/">AI for Protein Design</a>,
+                      Centre for Genomic Regulation, Spain
+                    </td>
+                    <td>amino acids</td>
+                    <td>
+                      <a href="https://huggingface.co/AI4PD/ZymCTRL">
+                        AI4PD/ZymCTRL
+                      </a>
+                    </td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                      Enzyme design model<br/>
+                        Improved on with reinforcement learning / DPO: <a href="https://github.com/AI4PDLab/DPO_pLM">code</a>
+                    </td>
+                </tr>
+
 
                 <tr>
                     <td>ProtNote</td>
@@ -338,8 +358,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        Notebooks:
-                        https://github.com/microsoft/protnote/tree/main/notebooks
+                        <a href="https://github.com/microsoft/protnote/tree/main/notebooks">Multiple notebooks</a>
                     </td>
                 </tr>
 
@@ -360,9 +379,9 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        Many finetuned models on HF, such as https://huggingface.co/blog/AmelieSchreiber/esmbind
+                        Many finetuned models on HF, such as <a href="https://huggingface.co/blog/AmelieSchreiber/esmbind">AmelieSchreiber/esmbind</a>
                         <br/ >
-                        With "Flash Attention" https://github.com/pengzhangzhi/faesm
+                        <a href="https://github.com/pengzhangzhi/faesm">With "Flash Attention"</a>
                     </td>
                 </tr>
 
@@ -379,7 +398,7 @@
                 </tr>
                 <tr>
                 <td colspan="5">
-                    http://data.bioembeddings.com/
+                    <a href="http://data.bioembeddings.com/">data.bioembeddings.com</a>
                 </td>
                 </tr>
 
@@ -420,10 +439,9 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        Embedding:
-                        https://github.com/songlab-cal/gpn/blob/main/examples/ss/basic_example.ipynb
-                        Multiple Sequence Alignment (MSA):
-                        https://github.com/songlab-cal/gpn/blob/main/examples/msa/basic_example.ipynb
+                        <a href="https://github.com/songlab-cal/gpn/blob/main/examples/ss/basic_example.ipynb">Embedding notebook</a>
+                        -
+                        <a href="https://github.com/songlab-cal/gpn/blob/main/examples/msa/basic_example.ipynb">Multiple Sequence Alignment (MSA)</a>
                     </td>
                 </tr>
 
@@ -440,7 +458,7 @@
                 </tr>
                 <tr>
                 <td colspan="5">
-                    Paper: https://www.biorxiv.org/content/10.1101/2024.11.11.622734
+                    <a href="https://www.biorxiv.org/content/10.1101/2024.11.11.622734">BioM3 paper</a>
                 </td>
                 </tr>
 
@@ -461,8 +479,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        demo notebook
-                        https://github.com/nadavbra/protein_bert/blob/master/ProteinBERT%20demo.ipynb
+                      <a href="https://github.com/nadavbra/protein_bert/blob/master/ProteinBERT%20demo.ipynb">demo notebook</a>
                     </td>
                 </tr>
 
@@ -485,8 +502,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        finetune
-                        https://github.com/raphaelmourad/Mistral-DNA/blob/main/scriptPython/script_finetune.ipynb
+                        <a href="https://github.com/raphaelmourad/Mistral-DNA/blob/main/scriptPython/script_finetune.ipynb">finetuning notebook</a>
                     </td>
                 </tr>
 
@@ -502,7 +518,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        Sample use: https://huggingface.co/h4duan/PAIR-prott5
+                        <a href="https://huggingface.co/h4duan/PAIR-prott5">Sample use in HF repo</a>
                     </td>
                 </tr>
 
@@ -527,8 +543,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        Sample
-                        https://github.com/instadeepai/protein-sequence-bfn/blob/main/sample.py
+                        <a href="https://github.com/instadeepai/protein-sequence-bfn/blob/main/sample.py">Sample Python script</a>
                     </td>
                 </tr>
 
@@ -579,8 +594,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        CoLab
-                        https://colab.research.google.com/drive/1On2xQU0d7351bIBgZpz2T0VUp2gZium0?usp=sharing
+                       <a href="https://colab.research.google.com/drive/1On2xQU0d7351bIBgZpz2T0VUp2gZium0?usp=sharing">CoLab notebook</a>
                     </td>
                 </tr>
 
@@ -593,9 +607,9 @@
                 </tr>
                 <tr>
                 <td colspan="5">
-                    evaluation: https://github.com/ml-jku/Prot-xLSTM/tree/main/evaluation
-                    generation: https://github.com/ml-jku/Prot-xLSTM/blob/main/examples/generation.ipynb
-                    variant fitness: https://github.com/ml-jku/Prot-xLSTM/blob/main/examples/variant_fitness.ipynb
+                    <a href="https://github.com/ml-jku/Prot-xLSTM/tree/main/evaluation">evaluation examples</a> -
+                    <a href="https://github.com/ml-jku/Prot-xLSTM/blob/main/examples/generation.ipynb">generation notebook</a> -
+                    <a href="https://github.com/ml-jku/Prot-xLSTM/blob/main/examples/variant_fitness.ipynb">variant fitness notebook</a>
                 </td>
                 </tr>
 
@@ -657,8 +671,9 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        tutorial creating a new task
-                        https://github.com/BiomedSciAI/biomed-multi-alignment/blob/main/tutorials/advanced_create_new_task.ipynb
+                        <a href="https://github.com/BiomedSciAI/biomed-multi-alignment/blob/main/tutorials/advanced_create_new_task.ipynb">
+                          tutorial notebook creating a new task
+                        </a>
                     </td>
                 </tr>
 
@@ -679,8 +694,9 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        contact prediction
-                        https://github.com/allanchen95/xTrimoPGLM/blob/main/finetune/lora_contact_prediction.py
+                       <a href="https://github.com/allanchen95/xTrimoPGLM/blob/main/finetune/lora_contact_prediction.py">
+                         contact prediction Python script
+                       </a>
                     </td>
                 </tr>
 
@@ -689,14 +705,12 @@
                     <td>Harvard University, USA</td>
                     <td>ESMTokenizer</td>
                     <td>
-                        <a href="https://huggingface.co/ProteinSequenceAnnotation"
-                            >ProteinSequenceAnnotation</a
-                        >
+                        <a href="https://huggingface.co/ProteinSequenceAnnotation">ProteinSequenceAnnotation</a>
                     </td>
                     <td>
-                        <a href="https://github.com/Protein-Sequence-Annotation/PSALM"
-                            >Protein-Sequence-Annotation/PSALM</a
-                        >
+                        <a href="https://github.com/Protein-Sequence-Annotation/PSALM">
+                          Protein-Sequence-Annotation/PSALM
+                        </a>
                     </td>
                 </tr>
                 <tr>
@@ -716,7 +730,6 @@
                     <td>--</td>
                 </tr>
                 <tr>
-                    <td colspan="5">--</td>
                 </tr>
 
                 <tr>
@@ -735,7 +748,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5">--</td>
                 </tr>
 
                 <tr>
@@ -754,7 +766,6 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5">--</td>
                 </tr>
             </table>
             <div class="vineborder"></div>
@@ -799,8 +810,7 @@
             </tr>
             <tr>
                 <td colspan="4">
-                    Inference example:
-                    https://github.com/evo-design/evo/blob/main/scripts/example_inference.py
+                    <a href="https://github.com/evo-design/evo/blob/main/scripts/example_inference.py">inference example Python script</a>
                 </td>
             </tr>
 
@@ -826,8 +836,7 @@
             </tr>
             <tr>
                 <td colspan="4">
-                    Evaluation scripts:
-                    https://github.com/HazyResearch/hyena-dna/tree/main/evals
+                    <a href="https://github.com/HazyResearch/hyena-dna/tree/main/evals">evaluation scripts</a>
                 </td>
             </tr>
 
@@ -862,8 +871,7 @@
             </tr>
             <tr>
                 <td colspan="4">
-                    Finetune:
-                    https://github.com/bowang-lab/scGPT/blob/main/examples/finetune_integration.py
+                    <a href="https://github.com/bowang-lab/scGPT/blob/main/examples/finetune_integration.py">finetuning Python script</a>
                 </td>
             </tr>
 
@@ -905,7 +913,7 @@
                 <td>CEITEC, Czech Republic</td>
                 <td>
                     <a href="https://huggingface.co/katarinagresova"
-                        >https://huggingface.co/katarinagresovakatarinagresova</a
+                        >katarinagresova</a
                     >
                 </td>
                 <td>
@@ -919,8 +927,8 @@
             </tr>
             <tr>
                 <td colspan="4">
-                    load benchmark from HF
-                    https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks/blob/main/notebooks/How_To_Use_Datasets_From_HF.ipynb
+
+                    <a href="https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks/blob/main/notebooks/How_To_Use_Datasets_From_HF.ipynb">Notebook loading benchmarks from HF</a>
                 </td>
             </tr>
 
@@ -999,10 +1007,9 @@
             </tr>
             <tr>
                 <td colspan="4">
-                    ChatCell instruction dataset:
-                    https://huggingface.co/datasets/zjunlp/ChatCell-Instructions <br/>
-                    Mol-Instructions dataset:
-                    https://huggingface.co/datasets/zjunlp/Mol-Instructions
+                    <a href="https://huggingface.co/datasets/zjunlp/ChatCell-Instructions">ChatCell instruction dataset</a>
+                    <br/>
+                    <a href="https://huggingface.co/datasets/zjunlp/Mol-Instructions">Mol-Instructions dataset</a>
                 </td>
             </tr>
 
@@ -1037,8 +1044,7 @@
             </tr>
             <tr>
                 <td colspan="4">
-                    Tutorial:
-                    https://github.com/CelVoxes/ceLLama/blob/main/ceLLama/pbmc2700.ipynb
+                    <a href="https://github.com/CelVoxes/ceLLama/blob/main/ceLLama/pbmc2700.ipynb">Tutorial notebook</a>
                 </td>
             </tr>
         </table>
