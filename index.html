@@ -8,10 +8,19 @@
             html {
                 font-family: sans-serif;
             }
+            body {
+                max-width: 960px;
+                margin: 0 auto;
+                padding: 16px 24px;
+                line-height: 1.5;
+            }
             table {
                 border: 1px solid #aaa;
+                border-collapse: collapse;
                 margin-right: 5px;
                 width: calc(100% - 50px);
+                display: block;
+                overflow-x: auto;
             }
             tr:nth-child(even) td {
                 border-top: 1px solid #444;
@@ -24,7 +33,12 @@
             }
             th,
             td {
-                padding: 4px;
+                padding: 8px 10px;
+            }
+            th {
+                background-color: #2a6e2a;
+                color: #fff;
+                text-align: left;
             }
             a {
                 cursor: pointer;
@@ -309,7 +323,23 @@
                     <td colspan="5">
                         Paper in Nature Communications: https://www.nature.com/articles/s41467-026-71090-y
                     </td>
-                </tr>                
+                </tr>
+                <tr>
+                    <td>LeafBench 2.0</td>
+                    <td>Korea University</td>
+                    <td>visual q&a task</td>
+                    <td>
+                        <a href="https://huggingface.co/datasets/enalis/LeafBenchV2">enalis/LeafBenchV2</a>
+                    </td>
+                    <td>
+                        <a href="https://github.com/EnalisUs/LeafBench">EnalisUs/LeafBench</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        Paper: <a href="https://arxiv.org/abs/2505.07019">arxiv.org/abs/2505.07019</a>
+                    </td>
+                </tr>
 
                 <tr>
                     <td>Plant Identification VIT</td>
@@ -326,7 +356,7 @@
                     <td colspan="5">
                     </td>
                 </tr>
-                
+
                 <tr>
                     <td>Farmer.chat</td>
                     <td>Digital Green and CGIAR, India</td>
@@ -393,7 +423,7 @@
                        <a href="https://www.biorxiv.org/content/10.1101/2025.10.24.684337v1">Biorxiv paper</a>
                     </td>
                 </tr>
-                
+
                 <tr>
                     <td>protein-matryoshka-embeddings</td>
                     <td>it me, USA</td>
@@ -586,7 +616,7 @@
                         Pretrained on human genome
                     </td>
                 </tr>
-                
+
                 <tr>
                     <td>Bio Embeddings</td>
                     <td>Technical University of Munich, Germany</td>
